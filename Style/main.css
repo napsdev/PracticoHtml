@@ -1,0 +1,411 @@
+/*COLORS AND FONTS OF PROJET*/
+:root{
+ --Very-light-pink:#C7C7C7;
+ --Text-input-field:#F7F7F7;
+ --Hospital-green:#ACD9B2;
+ --Dark:#232830;
+ --White:#FFFFFF;
+ --Black:#000000;
+ --sm: 14px;
+ --md: 16px;
+ --lg: 18px;
+}
+body{
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+}
+/*Rules, Margin -multiples of 4-*/
+
+/*Nav*/
+.desktop-menu{
+    width: 100px;
+    height: auto;
+    border: 1px solid var(--Very-light-pink);
+    border-radius: 6px;
+    padding: 20px 20px 0 20px;
+}
+
+.desktop-menu ul{
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+
+.desktop-menu ul li{
+    text-align: end;
+}
+
+.desktop-menu ul li:nth-child(1),.desktop-menu ul li:nth-child(2){
+    text-align: end;
+    font-weight: bold;
+}
+
+.desktop-menu ul li a{
+    color: var(--Black);
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+                 /* Ultimo elemento */
+.desktop-menu ul li:last-child{
+    padding-top: 20px;
+    border-top: 1px solid var(--Very-light-pink);
+}
+
+.desktop-menu ul li:last-child a{
+    color: var(--Hospital-green);
+    font-size: var(--sm);
+}
+/*Nav end*/
+/*Nav mobile*/
+.mobile-menu{
+    padding: 24px;
+}
+
+.mobile-menu a{
+    text-decoration: none;
+    color: var(--Black);
+    font-weight: bold;
+    margin-bottom: 24px;
+    /*display: inline-block*/
+}
+
+.mobile-menu ul{
+    padding: 0;
+    margin: 24px 0  0;
+    list-style: none;
+    /*display: inline-block*/
+    
+}
+
+.mobile-menu ul:nth-child(1){
+    border-bottom: 1px solid var(--Very-light-pink);
+}
+
+.mobile-menu ul li{
+    margin-bottom: 24px;
+    /*display: inline-block*/
+    
+}
+
+.mobile-menu .email{
+    font-size: var(--sm);
+    font-weight: 300;
+}
+
+.mobile-menu .sign-out{
+    font-size: var(--sm);
+    color: var(--Hospital-green);
+}
+
+.mobile-menu ul:last-child{
+    position: absolute;
+    bottom: 0;
+}
+/*Nav mobile end*/
+
+/*Pedidos*/
+.my-order{
+width: 100%;
+height: 100vh;
+display: grid;
+place-items: center;
+}
+
+.my-order-container{
+display: grid;
+grid-template-rows: auto 1fr auto;
+width: 300px;
+}
+
+.my-order-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.order{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    align-items: center;
+    background-color: var(--Text-input-field);
+    margin-bottom: 16px;
+    padding: 0 24px;
+    border-radius: 8px;
+}
+
+.order p:nth-child(1){
+    display: flex;
+    flex-direction: column;
+}
+
+.order p span:nth-child(1){
+    font-size: var(--md);
+}
+
+.order p span:nth-child(2){
+    font-size: var(--sm);
+    color: var(--Very-light-pink);
+}
+
+.order p:nth-child(2){
+    text-align: end;
+    font-weight: bold;
+}
+
+.shopping-cart{
+   display: grid;
+   grid-template-columns: auto 1fr auto auto;
+   gap: 10px;
+   margin-bottom: 24px;
+   align-items: center;
+}
+
+.shopping-cart figure img{
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.shopping-cart p:nth-child(2){
+    color: var(--Very-light-pink);
+}
+
+.shopping-cart p:nth-child(3){
+   font-size: var(--md);
+   font-weight: bold;
+}
+/*Pedidos end*/
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 26px;
+    place-content: center;
+}
+
+.product-car{
+    width: 240px;
+}
+
+.product-img{
+    width: 240px;
+    height: 240px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.product-des{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+                /* Primer item p */
+.product-des div p:nth-child(1){
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0px;
+    margin-bottom: 0px;
+   }
+
+.product-des div p:nth-child(2){
+    font-size: var(--sm);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: var(--Very-light-pink);
+}
+
+.icon-buy{
+    width: 35px;
+    height: 35px;
+}
+
+figure{
+    margin: 0;
+}
+
+.password{
+    width: 100%;
+    height: 100vh;
+    /*Items center whit grid*/
+    display: grid;
+    place-items: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form div{
+    display: flex;
+    flex-direction: column;
+}
+
+.form a{
+    color: var(--Hospital-green);
+    font-size: var(--sm);
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+.form-container{
+    /*Rows GRID*/
+    display: grid;
+    /*Fration GRID*/
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+    justify-items: center;
+}
+
+.logo{
+    width: 150px;
+    margin-bottom: 48px;
+    /*Center grid*/
+    justify-self: center;
+    display: none;
+}
+
+.title{
+    font-size: var(--lg);
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.subtitle{
+    color: var(--Very-light-pink);
+    font-size: var(--md);
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.email-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--Text-input-field);
+    /*Center grid*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.email-image img{
+    width: 80px;
+}
+
+.label{
+    font-size: var(--sm);
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.input{
+background-color: var(--Text-input-field);
+border: none;
+border-radius: 8px;
+height: 28px;
+font-size: var(--md);
+padding: 6px;
+margin-bottom: 12px;
+}
+
+.input-email{
+    margin-bottom: 22px;
+}
+
+.primary-button{
+    background-color: var(--Hospital-green);
+    border-radius: 8px;
+    border: none;
+    color: var(--White);
+    width: 100%;
+    /*Change icon mouse*/
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+
+
+.secondary-button{
+    background-color: var(--White);
+    border-radius: 8px;
+    border: 1px solid var(--Hospital-green);
+    color: var(--Hospital-green);
+    width: 100%;
+    /*Change icon mouse*/
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+
+
+.password-button{
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+
+.login-button{
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+
+.resent{
+ font-size: var(--sm);
+}
+
+.resent span{
+    color: var(--Very-light-pink);
+}
+
+.resent a{
+    color: var(--Hospital-green);
+    text-decoration: none;
+}
+
+.value{
+    color: var(--Very-light-pink);
+    font-size: var(--md);
+    margin: 8px 0 32px 0;
+}
+
+/*Responsive*/
+@media (max-width: 640px){
+    .logo{
+        display: block;
+    }
+    .secondary-button {
+        width: 300px;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 24px;
+    }
+    /* Adaptar separacion con clases padres */
+    .form-container{
+        height: 100%;
+        justify-content: space-between;
+    }
+    .form{
+        height: 100%;
+        justify-content: space-between;
+    }
+    .cards-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 140px);
+    }
+    .product-car{
+        width: 140px;
+    }
+    
+    .product-img{
+        width: 140px;
+        height: 140px;
+    }
+}
